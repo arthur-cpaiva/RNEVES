@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/menu.css">
+    <link rel="stylesheet" href="./CSS/perfil.css">
+</head>
+
+<body>
+    <!--Menu-->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./Imagens/logo.png" alt="logotipo da empresa">
+            </div>
+
+            <form action="" class="pesquisa">
+                <input type="text" class="pesquisar" placeholder="Pesquisar...">
+            </form>
+
+            <div class="links">
+                <a href="./notificacoes.html"><img src="./Imagens/Icone-notificação.png" alt="ícone de notificação"></a>
+                <a href="./configuracoes.html"><img src="./Imagens/Icone-configurações.png"
+                        alt="ícone de configurações"></a>
+                <a href="./perfil.html"><img src="./Imagens/Icone-perfil.png" alt="ícone de perfil"></a>
+                <a class="nome" href="#">Olá, Nome do Usuário <img src="./Imagens/Icone-dropdown.png"
+                        alt="ícone dropdown"></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="menu-mobile">
+        <a href="./notificacoes.html"><img src="./Imagens/Icone-notificação.png" alt="ícone de notificação"></a>
+        <a href="./configuracoes.html"><img src="./Imagens/Icone-configurações.png" alt="ícone de configurações"></a>
+        <a href="./perfil.html"><img src="./Imagens/Icone-perfil.png" alt="ícone de perfil"></a>
+        <a class="nome" href="#">Olá, Nome do Usuário <img src="./Imagens/Icone-dropdown.png" alt="ícone dropdown"></a>
+    </div>
+
+    <!--Corpo da página-->
+    <main>
+        <div class="foto">
+            <img src="./Imagens/Icone-perfil.png" alt="foto-de-perfil">
+            <button class="adicionar-foto">Adicionar Foto</button>
+        </div>
+
+        <form action="" class="formulario">
+            <h1>Gerenciamento de perfil</h1>
+            <p><strong>Nome Completo</strong></p>
+            <input type="text">
+            <p><strong>CPF</strong></p>
+            <input type="number">
+            <p><strong>E-mail</strong></p>
+            <input type="email">
+            <p><strong>Telefone</strong></p>
+            <input type="tel">
+            <p><strong>Data de Nascimento</strong></p>
+            <input type="date">
+            <p><strong>Sexo</strong></p>
+            <select>
+                <option value="0">Selecione:</option>
+                <option value="1">Masculino</option>
+                <option value="2">Feminino</option>
+                <option value="2">Prefiro não dizer</option>
+            </select>
+            <button class="confirmar">Confirmar alteração</button>
+        </form>
+    </main>
+
+
+
+
+
+
+
+</body>
+
+</html>
