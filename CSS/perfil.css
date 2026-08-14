@@ -11,117 +11,15 @@ body {
     color: rgb(3, 3, 94);
 }
 
-/*SIDEBAR*/
-
-
-.sidebar{
-    width:250px;
-    height:100vh;
-    background:#ffffff;
-    border-right:1px solid #e5e5e5;
-    position:fixed;
-    left:10px;
-    top:0;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    padding:20px 20px;
-}
-
-.sidebar .logo{
-    display:flex;
-    justify-content:center;
-    margin-bottom:40px;
-}
-
-.sidebar .logo img{
-    width:170px;
-}
-
-.sidebar nav{
-    display:flex;
-    flex-direction:column;
-    gap:8px;
-    align-items: stretch;
-    justify-content: flex-start;
-}
-
-.sidebar nav a{
-    text-decoration:none;
-    color:#5b5b5b;
-    font-size:16px;
-    padding:15px 18px;
-    border-radius:12px;
-    display:flex;
-    align-items:center;
-    gap:15px;
-    transition:.3s;
-    justify-content: flex-start;
-}
-
-.sidebar nav a i{
-    font-size:18px;
-    width:20px;
-    text-align:center;
-}
-
-.sidebar nav a:hover{
-    background:#bed5df;
-    color:#0d314e;
-}
-
-.sidebar nav a.active{
-    background:#0d314e;
-    color:#fff;
-    font-weight:600;
-}
-
-.support-card{
-    background:#bed5df;
-    border-radius:18px;
-    padding:20px;
-    text-align:center;
-    margin-top:30px;
-   
-}
- 
-.support-card h4{
-    color:#0d314e;
-    margin-bottom:10px;
-}
- 
-.support-card p{
-    font-size:14px;
-    color:#666;
-    margin-bottom:18px;
-}
- 
-.support-card button{
-    width:100%;
-    border:none;
-    background:#0d314e;
-    color:#fff;
-    padding:13px;
-    border-radius:10px;
-    cursor:pointer;
-    font-size:15px;
-    transition:.3s;
-}
- 
-.support-card button:hover{
-    background:#9f3f5d;
-}
-
-
 /*ÁREA PRINCIPAl*/
 
 main {
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 55% 15%;
     width: 100%;
     min-height: 100vh;
     padding: 20px 30px;
-    gap: 25%;
+    gap: 15%;
 }
 
 
@@ -133,22 +31,6 @@ main {
     align-items: center;
     gap: 20px;
 }
-
-.voltar {
-    display: flex;
-    align-self: flex-start;
-    margin: 0;
-    text-decoration: none;
-    color: rgb(3, 3, 94);
-    gap: 10px;
-    font-size: 1.1em;
-    font-weight: 600;
-}
-
-.voltar img {
-    width: 1.5rem;
-}
-
 
 .foto button {
     width: 180px;
@@ -169,7 +51,7 @@ main {
     display: flex;
     flex-direction:column;
     gap: 5px;
-    width: 100%;
+    width: 150%;
     max-width: 390px;
 }
 
@@ -208,8 +90,9 @@ select {
     margin-top: 32px;
     border: none;
     border-radius: 5px;
-    background: #eeeeee;
+    background: #e4e3e3;
     color: rgb(3, 3, 94);
+    font-weight: 700;
     box-shadow: none;
     font-family: inherit;
     font-size: 12px;

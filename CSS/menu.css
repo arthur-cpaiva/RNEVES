@@ -4,18 +4,14 @@
     padding: 0;
 }
 
-nav {
+.menu-nav {
     background-color: #f5f3f5;
     color: white;
     justify-content: space-between;
     align-items: center;
     display: flex;
     padding: 15px 20px;
-}
-
-.logo img {
-    width: 200px;
-    mix-blend-mode: multiply;
+    margin-left: 15%;
 }
 
 .pesquisar {
@@ -46,10 +42,13 @@ a img {
 .links .nome {
     color: black;
     padding: 20px;
+    display: flex;
+    margin: 0;
+    gap: 2px;
 }
 
 .nome img {
-    width: 0.9em;
+    width:1.5rem;
 }
 
 .menu-mobile {

@@ -7,21 +7,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/menu.css">
     <link rel="stylesheet" href="./CSS/perfil.css">
+    <link rel="stylesheet" href="./CSS/sidebar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="./Javascript/script.js"></script>
+
 </head>
+
 
 <body>
     <!--Menu-->
     <header>
-        <nav>
-            <div class="logo">
-                <img src="./Imagens/Logo Colorido.png" alt="logotipo da empresa">
-            </div>
-
+        <nav class="menu-nav">
             <form action="" class="pesquisa">
                 <input type="text" class="pesquisar" placeholder="Pesquisar...">
             </form>
@@ -37,8 +37,9 @@
         </nav>
     </header>
 
-
+    <input type="checkbox" id="sidebar-toggle" class="toggle-checkbox">
     <aside class="sidebar">
+        <label for="sidebar-toggle" class="toggle-btn">|||</label>
 
         <div>
 
@@ -158,7 +159,6 @@
     <!--Corpo da página-->
     <main>
         <div class="foto">
-            <a href="#" class="voltar"><img src="./Imagens/seta-voltar.png" alt="">Voltar</a>
             <img src="./Imagens/Icone-perfil.png" alt="foto-de-perfil">
             <button class="adicionar-foto">Adicionar Foto</button>
             <h1>Nome completo</h1>
@@ -210,6 +210,7 @@
             </select>
             <p>Porque você quer cancelar a sua matrícula?</p>
             <input type="text" class="cancelamento-matricula">
+            <button class="confirmar">Salvar Alterações</button>
         </form>
 
 
