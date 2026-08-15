@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-nav {
+    background-color: #f5f3f5;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 15px 20px;
+    margin-left: 15%;
+}
+
+.pesquisar {
+    width: 500px;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: border-color 0.3 ease;
+}
+
+.links {
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+a img {
+    width: 50px;
+}
+
+.links .nome {
+    color: black;
+    padding: 20px;
+    display: flex;
+    margin: 0;
+    gap: 2px;
+}
+
+.nome img {
+    width:1.5rem;
+}
+
+.menu-mobile {
+    display: none;
+    background-color: #F5F3F5;
+}
+
+.menu-mobile a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-bottom: 1px solid #1d4ed8;
+}

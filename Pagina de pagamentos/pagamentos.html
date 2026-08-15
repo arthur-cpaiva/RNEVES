@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/menu.css">
-    <link rel="stylesheet" href="./CSS/perfil.css">
+    <link rel="stylesheet" href="./CSS/pagamentos.css">
     <link rel="stylesheet" href="./CSS/sidebar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <script src="./Javascript/script.js"></script>
 
 </head>
 
@@ -27,12 +26,14 @@
             </form>
 
             <div class="links">
-                <a href="./notificacoes.html"><img src="./Imagens/Icone-notificação.png" alt="ícone de notificação"></a>
-                <a href="./configuracoes.html"><img src="./Imagens/Icone-configurações.png"
+                <a href="./notificacoes.html"><img src="../Gerenciamento de Perfil/Imagens/Icone-notificação.png"
+                        alt="ícone de notificação"></a>
+                <a href="./configuracoes.html"><img src="../Gerenciamento de Perfil/Imagens/Icone-configurações.png"
                         alt="ícone de configurações"></a>
-                <a href="./perfil.html"><img src="./Imagens/Icone-perfil.png" alt="ícone de perfil"></a>
-                <a class="nome" href="#">Olá, Nome do Usuário <img src="./Imagens/Icone-dropdown.png"
-                        alt="ícone dropdown"></a>
+                <a href="./perfil.html"><img src="../Gerenciamento de Perfil/Imagens/Icone-perfil.png"
+                        alt="ícone de perfil"></a>
+                <a class="nome" href="#">Olá, Nome do Usuário <img
+                        src="../Gerenciamento de Perfil/Imagens/Icone-dropdown.png" alt="ícone dropdown"></a>
             </div>
         </nav>
     </header>
@@ -47,7 +48,7 @@
 
             <div class="logo">
 
-                <img src="./Imagens/logo.png" alt="Logo RNeves Personal Cleaner">
+                <img src="../Gerenciamento de Perfil/Imagens/logo.png" alt="Logo RNeves Personal Cleaner">
 
             </div>
 
@@ -156,72 +157,39 @@
         <a class="nome" href="#">Olá, Nome do Usuário <img src="./Imagens/Icone-dropdown.png" alt="ícone dropdown"></a>
     </div>
 
-    <!--Corpo da página-->
-    <main>
-        <div class="foto">
-            <img src="./Imagens/Icone-perfil.png" alt="foto-de-perfil">
-            <button class="adicionar-foto">Adicionar Foto</button>
-            <h1>Nome completo</h1>
-        </div>
+    <!--CONTEUDO DA PAGINA-->
 
-        <form action="" class="formulario">
-            <h2>Gerenciamento de perfil</h2>
-            <p>Nome Completo</p>
-            <input type="text">
-            <p>CPF</p>
-            <input type="number">
-            <p>E-mail</p>
-            <input type="email">
-            <p>Telefone</p>
-            <input type="tel">
-            <p>Data de Nascimento</p>
-            <input type="date">
-            <p>Sexo</p>
-            <select>
-                <option value="0" disabled selected>Selecione:</option>
-                <option value="1">Masculino</option>
-                <option value="2">Feminino</option>
-                <option value="2">Prefiro não dizer</option>
-            </select>
-            <button class="confirmar">Confirmar alteração</button>
-            <br>
-            <h2>Alterar Senha</h2>
-            <p>Senha antiga</p>
-            <input type="password">
-            <p>Nova Senha</p>
-            <input type="password">
-            <p>Confirmar Nova Senha</p>
-            <input type="password">
-            <button class="confirmar">Confirmar alteração</button>
-            <br>
-            <h2>Alterar Número de Telefone</h2>
-            <p>Número de telefone Antigo</p>
-            <input type="tel">
-            <p>Nova Número de Telefone</p>
-            <input type="tel">
-            <button class="confirmar">Confirmar alteração</button>
-            <br>
-            <h2>Cancelamento de Matrícula</h2>
-            <p>Deseja cancelar a sua matrícula?</p>
-            <select>
-                <option value="0" disabled selected>Selecione...</option>
-                <option value="1">Sim</option>
-                <option value="1">Não</option>
-            </select>
-            <p>Porque você quer cancelar a sua matrícula?</p>
-            <input type="text" class="cancelamento-matricula">
-            <button class="confirmar">Salvar Alterações</button>
-        </form>
+    <main>
+        <h1>Próximos Boletos</h1>
+        <section>
+            <div class="card-principal">
+                <div class="card-boleto">
+                    <p>Boleto a vencer <br> em data X</p>
+                    <span><i class="fa-solid fa-print"></i></span>
+                </div>
+
+                <div class="card-boleto">
+                    <p>Boleto a vencer <br >em data X</p>
+                    <span><i class="fa-solid fa-print"></i></span>
+                </div>
+
+                <div class="card-boleto">
+                    <p>Boleto a vencer <br> em data X</p>
+                    <span><i class="fa-solid fa-print"></i></span>
+                </div>
+
+                <div class="card-boleto">
+                    <p>Boleto a vencer <br> em data X</p>
+                    <span><i class="fa-solid fa-print"></i></span>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
 
 
     </main>
-
-
-
-
-
-
-
-</body>
-
-</html>
