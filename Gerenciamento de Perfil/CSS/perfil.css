@@ -9,17 +9,19 @@ body {
     background: #f5f3f5;
     line-height: 1.6;
     color: rgb(3, 3, 94);
+    overflow-x: hidden;
 }
 
 /*ÁREA PRINCIPAl*/
 
 main {
     display: grid;
-    grid-template-columns: 55% 15%;
+    grid-template-columns: minmax(300px, 1fr) minmax(300px, 390px);
     width: 100%;
     min-height: 100vh;
     padding: 20px 30px;
-    gap: 15%;
+    gap: 60px;
+    align-items: start;
 }
 
 
@@ -30,6 +32,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    width: 100%;
 }
 
 .foto button {
@@ -49,11 +52,23 @@ main {
 
 .formulario {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     gap: 5px;
-    width: 150%;
+    width: 100%;
     max-width: 390px;
+    justify-self: start;
 }
+
+.formulario h2 {
+    font-size: 23px;
+    margin-bottom: 2px;
+    margin-top: 15px;
+}
+
+.formulario p {
+    font-size: 15px;
+}
+
 
 input {
     width: 100%;
@@ -119,3 +134,136 @@ select {
         margin: 0 auto;
     }
 }
+
+/*MOBILE*/
+
+@media (max-width: 1100px) {
+    main {
+        padding: 30px;
+        grid-template-columns: minmax(250px, 1fr) minmax(280px, 360px);
+        gap: 30px;
+    }
+
+    .foto img {
+        width: min(400px, 90%);
+    }
+
+    .foto h1 {
+        font-size: 27px;
+    }
+
+    .formulario {
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        margin-left: 0;
+
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        padding: 30px;
+    }
+
+
+    .foto {
+        order: 1;
+    }
+
+
+    .formulario {
+        order: 2;
+
+        width: 100%;
+        max-width: 600px;
+
+        margin: 0 auto;
+    }
+
+
+    .foto img {
+        width: min(400px, 70vw);
+    }
+
+}
+
+@media(max-width:600px){
+      main {
+        width: 100%;
+
+        padding: 25px 20px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 40px;
+    }
+
+    .foto {
+        width: 100%;
+    }
+
+
+    .foto img {
+        width: min(300px, 80vw);
+    }
+
+
+    .foto button {
+        width: 180px;
+
+        margin-top: 5px;
+    }
+
+
+    .foto h1 {
+        font-size: 25px;
+    }
+
+    .formulario {
+        width: 100%;
+
+        max-width: none;
+    }
+
+
+    .formulario h2 {
+        font-size: 21px;
+
+        margin-top: 20px;
+    }
+
+
+    .formulario p {
+        font-size: 14px;
+    }
+
+
+    input,
+    select {
+        height: 34px;
+    }
+
+
+    .confirmar {
+        width: 100%;
+
+        height: 35px;
+
+        margin-top: 20px;
+    }
+
+
+    .cancelamento-matricula {
+        height: 100px;
+    }
+
+}
+
+

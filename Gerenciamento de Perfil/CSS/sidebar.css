@@ -17,38 +17,6 @@
     transition: width 0.3s ease;
 }
 
-.toggle-checkbox {
-    display: none !important;
-}
-
-.toggle-btn {
-    position: absolute;
-    top: 33%;
-    right: -20px;
-    width: 20px;
-    height: 30px;
-    background-color: #0d314e;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.toggle-checkbox:checked+.sidebar {
-    width: 60px;
-}
-
-.toggle-checkbox:checked+.sidebar nav a span {
-    display: none;
-}
-
-.toggle-checkbox:checked+.sidebar nav a {
-    justify-content: center;
-    padding: 15px 0;
-}
-
 .sidebar .logo {
     display: flex;
     justify-content: center;
@@ -147,4 +115,13 @@
 
 .support-card button:hover {
     background: #9f3f5d;
+}
+
+/*MOBILE*/
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        display: none;
+    }
 }

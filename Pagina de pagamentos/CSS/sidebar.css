@@ -116,3 +116,12 @@
 .support-card button:hover {
     background: #9f3f5d;
 }
+
+/*MOBILE*/
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        display: none;
+    }
+}
