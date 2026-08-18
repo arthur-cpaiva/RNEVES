@@ -15,9 +15,11 @@ body {
 
 main {
     display: grid;
-    grid-template-columns:none;
+    grid-template-columns: none;
     width: 100%;
-    padding: 10px 30px;
+    padding: 30px 30px;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 h1 {
@@ -27,26 +29,71 @@ h1 {
 
 .card-principal {
     border: 1px solid;
-    padding: 20px;
-    margin: 10px 10px 250px;
+    padding: 8vh 35vh;
+    margin-top: 25px;
+    margin-left: 260px;
     display: flex;
-    gap: 50px;
+    gap: 60px;
     justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(216, 216, 226);
 }
 
-.card-boleto{
+.card-boleto {
     display: flex;
-    gap: 25px;
+    gap: 2px;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: #ffff;
     justify-content: center;
-    border: 1px solid;
-    padding: 25px 40px;
+    text-align: center;
+    width: 200px;
+    height: auto;
 }
 
-.card-coleto span{
-    width: 60px;
-    height: 70px;
-    background-color: #203858;
-    align-items: center;
-    font-size: 32px;
+.card-boleto span {
+    font-size: 50px;
+}
+
+.card-boleto p {
+    text-align: center;
+    padding: 12px;
+    font-size: 17px;
+}
+
+.extrato {
+    margin-top: 25px;
+}
+
+.card-secundario {
     border: 1px solid;
+    padding: 20vh 35vh;
+    margin-top: 25px;
+    margin-left: 260px;
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: rgb(216, 216, 226);
+}
+
+.segunda-via {
+    text-align: center;
+    display: grid;
+    grid-template-columns: none;
+    padding: 50px;
+    background-color: #f5f3f5;
+    padding: 200px;
+}
+
+.boletos-segunda-via {
+    display: flex;
+    gap: 2px;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: #ffff;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    height: auto;
 }
