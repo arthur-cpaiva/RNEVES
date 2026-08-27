@@ -22,12 +22,13 @@
     border: 1px solid black;
     border-radius: 10px;
     transition: border-color 0.3 ease;
-    margin: 0 170px;
+    margin: 0 150px;
 }
 
 .links {
     display: flex;
     margin-top: 10px;
+    margin-right: 65px;
     gap: 20px;
 }
 

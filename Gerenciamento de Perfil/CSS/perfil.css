@@ -16,12 +16,13 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: minmax(300px, 1fr) minmax(300px, 390px);
-    width: 100%;
+    grid-template-columns: minmax(400px, 8000px) minmax(300px, 390px);
+    width: 95%;
     min-height: 100vh;
     padding: 20px 30px;
-    gap: 60px;
+    gap: 40px;
     align-items: start;
+    justify-content: center;
 }
 
 
@@ -42,12 +43,19 @@ main {
     margin-top: 32px;
     border: none;
     border-radius: 5px;
-    background: #eeeeee;
+    background: #e4e3e3;
     color: rgb(3, 3, 94);
+    font-weight: 700;
     box-shadow: none;
     font-family: inherit;
     font-size: 12px;
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
 .formulario {
@@ -84,7 +92,6 @@ input {
 .cancelamento-matricula {
     width: 100%;
     height: 100px;
-
 }
 
 select {
@@ -112,7 +119,14 @@ select {
     font-family: inherit;
     font-size: 12px;
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.confirmar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
 
 /*RESPONSIVIDADE*/
 
@@ -192,8 +206,8 @@ select {
 
 }
 
-@media(max-width:600px){
-      main {
+@media(max-width:600px) {
+    main {
         width: 100%;
 
         padding: 25px 20px;
@@ -265,5 +279,3 @@ select {
     }
 
 }
-
-
