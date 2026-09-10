@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <script src="../Gerenciamento de Perfil/Javascript/script.js"></script>
+    <script src=".//Javascript/script.js" defer></script>
 
 </head>
 
@@ -37,6 +37,10 @@
         </nav>
     </header>
 
+      
+    <button class="menu-hamburguer" id="menuHamburguer">
+        <i class="fa-solid fa-bars"></i>
+    </button> 
 
     <aside class="sidebar">
 
@@ -191,14 +195,14 @@
             <input type="password">
             <p>Confirmar Nova Senha</p>
             <input type="password">
-            <button class="confirmar">Confirmar alteração</button>
+            <button class="confirmar" id="confirmar">Confirmar alteração</button>
             <br>
             <h2>Alterar Número de Telefone</h2>
             <p>Número de telefone Antigo</p>
             <input type="tel">
             <p>Nova Número de Telefone</p>
             <input type="tel">
-            <button class="confirmar">Confirmar alteração</button>
+            <button class="confirmar" id="confirmar">Confirmar alteração</button>
             <br>
             <h2>Cancelamento de Matrícula</h2>
             <p>Deseja cancelar a sua matrícula?</p>
@@ -209,7 +213,7 @@
             </select>
             <p>Porque você quer cancelar a sua matrícula?</p>
             <input type="text" class="cancelamento-matricula">
-            <button class="confirmar">Salvar Alterações</button>
+            <button class="confirmar" id="confirmar">Salvar Alterações</button>
         </form>
 
 
