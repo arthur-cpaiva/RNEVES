@@ -1,3 +1,5 @@
+/*Sidebar*/
+
 const menuHamburguer = document.querySelector("#menuHamburguer");
 const sidebar = document.querySelector(".sidebar");
 
@@ -7,3 +9,12 @@ menuHamburguer.addEventListener("click", function () {
     
     sidebar.classList.toggle("ativa");
 });
+
+/*Modal para confirmar alterarações*/
+const btnConfirmar = document.getElementById("btnConfirmar")
+
+if(btnConfirmar){
+    btnConfirmar.addEventListener("click", function(){
+
+        
+    }
