@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./CSS/menu.css">
-    <link rel="stylesheet" href="./CSS/perfil.css">
-    <link rel="stylesheet" href="./CSS/sidebar.css">
+    <link rel="stylesheet" href="/CSS/menu.css">
+    <link rel="stylesheet" href="/CSS/perfil.css">
+    <link rel="stylesheet" href="/CSS/sidebar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <script src=".//Javascript/script.js" defer></script>
+    <script src="/Javascript/script.js" defer></script>
 
 </head>
 
@@ -27,20 +27,20 @@
             </form>
 
             <div class="links">
-                <a href="./notificacoes.html"><img src="./Imagens/Icone-notificação.png" alt="ícone de notificação"></a>
-                <a href="./configuracoes.html"><img src="./Imagens/Icone-configurações.png"
+                <a href="./notificacoes.html"><img src="/Imagens/Icone-notificação.png" alt="ícone de notificação"></a>
+                <a href="./configuracoes.html"><img src="/Imagens/Icone-configurações.png"
                         alt="ícone de configurações"></a>
-                <a href="./perfil.html"><img src="./Imagens/Icone-perfil.png" alt="ícone de perfil"></a>
-                <a class="nome" href="#">Olá, Nome do Usuário <img src="./Imagens/Icone-dropdown.png"
+                <a href="./perfil.html"><img src="/Imagens/Icone-perfil.png" alt="ícone de perfil"></a>
+                <a class="nome" href="#">Olá, Nome do Usuário <img src="/Imagens/Icone-dropdown.png"
                         alt="ícone dropdown"></a>
             </div>
         </nav>
     </header>
 
-      
+
     <button class="menu-hamburguer" id="menuHamburguer">
         <i class="fa-solid fa-bars"></i>
-    </button> 
+    </button>
 
     <aside class="sidebar">
 
@@ -50,7 +50,7 @@
 
             <div class="logo">
 
-                <img src="./Imagens/logo.png" alt="Logo RNeves Personal Cleaner">
+                <img src="/Imagens/logo.png" alt="Logo RNeves Personal Cleaner">
 
             </div>
 
@@ -153,80 +153,92 @@
 
 
     <div class="menu-mobile">
-        <a href="./notificacoes.html"><img src="./Imagens/Icone-notificação.png" alt="ícone de notificação"></a>
-        <a href="./configuracoes.html"><img src="./Imagens/Icone-configurações.png" alt="ícone de configurações"></a>
-        <a href="./perfil.html"><img src="./Imagens/Icone-perfil.png" alt="ícone de perfil"></a>
-        <a class="nome" href="#">Olá, Nome do Usuário <img src="./Imagens/Icone-dropdown.png" alt="ícone dropdown"></a>
+        <a href="./notificacoes.html"><img src="/Imagens/Icone-notificação.png" alt="ícone de notificação"></a>
+        <a href="./configuracoes.html"><img src="/Imagens/Icone-configurações.png" alt="ícone de configurações"></a>
+        <a href="./perfil.html"><img src="/Imagens/Icone-perfil.png" alt="ícone de perfil"></a>
+        <a class="nome" href="#">Olá, Nome do Usuário <img src="/Imagens/Icone-dropdown.png" alt="ícone dropdown"></a>
     </div>
 
     <!--Corpo da página-->
     <main>
         <div class="foto">
-            <img src="./Imagens/Icone-perfil.png" alt="foto-de-perfil">
+            <img src="/Imagens/Icone-perfil.png" alt="foto-de-perfil">
             <button class="adicionar-foto">Adicionar Foto</button>
             <h1>Nome completo</h1>
         </div>
 
         <form action="" class="formulario">
             <h2>Gerenciamento de perfil</h2>
-            <p>Nome Completo</p>
-            <input type="text">
-            <p>CPF</p>
-            <input type="number">
             <p>E-mail</p>
             <input type="email">
-            <p>Telefone</p>
-            <input type="tel">
-            <p>Data de Nascimento</p>
-            <input type="date">
-            <p>Sexo</p>
-            <select>
-                <option value="0" disabled selected>Selecione:</option>
-                <option value="1">Masculino</option>
-                <option value="2">Feminino</option>
-                <option value="2">Prefiro não dizer</option>
-            </select>
-            <button type="submit" class="confirmar">Confirmar alteração</button>
+            <p>Confirmar e-mail</p>
+            <input type="email">
+            <button type="button" class="confirmar">Confirmar alteração</button>
             <br>
+            
             <h2>Alterar Senha</h2>
-            <p>Senha antiga</p>
+            <p>Senha atual</p>
             <input type="password">
-            <p>Nova Senha</p>
+            <p>Nova senha</p>
             <input type="password">
-            <p>Confirmar Nova Senha</p>
+            <p>Confirmar nova senha</p>
             <input type="password">
-            <button type="submit" class="confirmar" id="confirmar">Confirmar alteração</button>
+            <button type="button" class="confirmar">Confirmar alteração</button>
             <br>
+            
             <h2>Alterar Número de Telefone</h2>
-            <p>Número de telefone Antigo</p>
+            <p>Número de telefone antigo</p>
             <input type="tel">
-            <p>Nova Número de Telefone</p>
+            <p>Novo número de telefone</p>
             <input type="tel">
-            <button type="submit" class="confirmar" id="confirmar">Confirmar alteração</button>
+            <button type="button" class="confirmar">Confirmar alteração</button>
             <br>
+            
             <h2>Cancelamento de Matrícula</h2>
             <p>Deseja cancelar a sua matrícula?</p>
             <select>
                 <option value="0" disabled selected>Selecione...</option>
                 <option value="1">Sim</option>
-                <option value="1">Não</option>
             </select>
             <p>Porque você quer cancelar a sua matrícula?</p>
             <input type="text" class="cancelamento-matricula">
-            <button type="submit" class="confirmar" id="confirmar">Salvar Alterações</button>
+            <button type="button" class="confirmar">Salvar Alterações</button>
         </form>
 
 
     </main>
 
-<div id="modalConfirmacao" class="modal">
-<div class="modal-conteudo">
-<button id="btn-Fechar" class="btn-Fechar">&times;</button>
 
+    <div id="modalConfirmacao" class="modal">
 
+        <div class="modal-conteudo">
 
-</div>
-</div>
+            <!-- Botão para fechar o modal -->
+            <button type="button" id="btn-Fechar" class="btn-Fechar">
+                &times;
+            </button>
+
+            <!-- Ícone de confirmação -->
+            <div class="modal-icone">
+                <i class="fa-solid fa-circle-question"></i>
+            </div>
+
+            <!-- Título -->
+            <h2>Confirmar alteração</h2>
+
+            <!-- Mensagem -->
+            <p>Tem certeza que deseja realizar esta alteração?</p>
+
+            <!-- Botões -->
+            <div class="modal-botoes">
+                <button type="button" id="btn-Sim">Confirmar</button>
+                <button type="button" id="btn-Nao">Cancelar</button>
+            </div>
+
+        </div>
+
+    </div>
+
 
 
 

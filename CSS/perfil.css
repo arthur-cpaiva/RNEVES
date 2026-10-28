@@ -128,6 +128,112 @@ select {
 }
 
 
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal .modal-conteudo {
+    position: relative;
+    background-color: #ffffff;
+    padding: 45px 30px 35px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.18);
+    box-sizing: border-box;
+}
+
+.modal .btn-Fechar {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 32px;
+    height: 32px;
+    background-color: #f0f2f5;
+    color: #0d314e;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.modal .modal-icone {
+    margin: 0 auto 18px;
+    width: 55px;
+    height: 55px;
+    background-color: #e8f1f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0d314e;
+    font-size: 28px;
+}
+
+.modal .modal-conteudo h2 {
+    color: #4a82b1;
+    font-size: 23px;
+    font-weight: 700;
+    margin: 0 0 12px;
+}
+
+.modal .modal-conteudo p {
+    color: #536273;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.modal .modal-botoes {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.modal .modal-botoes button {
+    flex: 1;
+    min-height: 44px;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal .modal-botoes #btn-Sim {
+    background-color: #0d314e;
+    color: #ffffff;
+}
+
+.modal .modal-botoes #btn-Nao {
+    background-color: #e8edf1;
+    color: #0d314e;
+}
+
+.modal .modal-botoes #btn-Sim:hover {
+    background-color: #174b70;
+}
+
+.modal .modal-botoes #btn-Nao:hover {
+    background-color: #d4dfe6;
+}
+
+
 /*RESPONSIVIDADE*/
 
 @media (max-width: 800px) {
