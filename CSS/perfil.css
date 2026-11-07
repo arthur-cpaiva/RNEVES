@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -5,52 +6,94 @@
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', 'Helvetica Neue', sans-serif;
     background: #f5f3f5;
     line-height: 1.6;
     color: rgb(3, 3, 94);
     overflow-x: hidden;
 }
 
-/*ÁREA PRINCIPAl*/
+/* ÁREA PRINCIPAL */
 
 main {
-    display: grid;
-    grid-template-columns: minmax(400px, 8000px) minmax(300px, 390px);
-    width: 95%;
-    min-height: 100vh;
-    padding: 20px 30px;
-    gap: 40px;
-    align-items: start;
+    display: flex;
     justify-content: center;
+    align-items: flex-start;
+    margin-left: 260px;
+    width: calc(100% - 260px);
+    min-height: 100vh;
+    padding: 30px;
 }
 
+/* CONTAINER PRINCIPAL */
 
-/*ÁREA DA FOTO*/
+.container-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    gap: 30px;
+    padding: 42px 5%;
+    margin: 0;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: #f6f4fd;
+}
+
+/* FOTO DE PERFIL */
 
 .foto {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     width: 100%;
+    text-align: center;
 }
 
+.icone-perfil {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #0d314e;
+    border-radius: 50%;
+    background-color: #e8f1f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.icone-perfil i {
+    font-size: 90px;
+    color: #a5bdca;
+}
+
+.foto h1 {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+/* BOTÃO ADICIONAR FOTO */
+
 .foto button {
-    width: 180px;
-    height: 25px;
-    padding: 0;
-    margin-top: 32px;
+    width: 200px;
+    min-height: 42px;
+    padding: 10px 20px;
+    margin-top: 5px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     background: #e4e3e3;
     color: rgb(3, 3, 94);
     font-weight: 700;
-    box-shadow: none;
     font-family: inherit;
     font-size: 12px;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
 }
 
 .foto button:hover {
@@ -58,68 +101,113 @@ main {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
+/* FORMULÁRIO */
+
 .formulario {
     display: flex;
     flex-direction: column;
-    gap: 5px;
     width: 100%;
-    max-width: 390px;
-    justify-self: start;
+    max-width: 650px;
+    margin-bottom: 20px;
 }
 
-.formulario h2 {
+.secao-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+}
+
+.secao-formulario h2 {
     font-size: 23px;
-    margin-bottom: 2px;
     margin-top: 15px;
+    margin-bottom: 10px;
 }
 
-.formulario p {
+/* CAMPOS */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+}
+
+.campo label {
+    font-size: 16px;
+    color: rgb(3, 3, 94);
+}
+
+/* CAMPOS EM DUAS COLUNAS */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+/* INPUTS */
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    min-width: 0;
+    border-radius: 6px;
+    padding: 10px 12px;
+    border: 1px solid rgb(3, 3, 94);
+    background: transparent;
+    font-family: inherit;
     font-size: 15px;
-}
-
-
-input {
-    width: 100%;
-    height: 21px;
-    border-radius: 5px;
-    padding: 2px 8px;
-    border: 1px solid rgb(3, 3, 94);
-    background: transparent;
-    font-family: inherit;
     color: rgb(3, 3, 94);
 }
 
-.cancelamento-matricula {
-    width: 100%;
-    height: 100px;
+.formulario input,
+.formulario select {
+    height: 42px;
 }
 
-select {
-    width: 100%;
-    height: 21px;
-    border-radius: 5px;
-    padding: 2px 8px;
-    border: 1px solid rgb(3, 3, 94);
-    background: transparent;
-    font-family: inherit;
-    color: rgb(3, 3, 94);
+.formulario textarea {
+    min-height: 100px;
+    resize: vertical;
 }
+
+/* FOCO NOS CAMPOS */
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    outline: 2px solid #0d314e;
+    outline-offset: 2px;
+}
+
+/* DIVISÓRIAS */
+
+.formulario hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 35px 0;
+}
+
+/* BOTÕES DE CONFIRMAÇÃO */
 
 .confirmar {
-    width: 180px;
-    height: 25px;
-    padding: 0;
-    margin-top: 32px;
+    width: 200px;
+    min-height: 42px;
+    padding: 10px 20px;
+    margin-top: 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     background: #e4e3e3;
     color: rgb(3, 3, 94);
     font-weight: 700;
-    box-shadow: none;
     font-family: inherit;
     font-size: 12px;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
 }
 
 .confirmar:hover {
@@ -127,6 +215,7 @@ select {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
+/* MODAL DE CONFIRMAÇÃO */
 
 .modal {
     display: none;
@@ -148,7 +237,6 @@ select {
     max-width: 420px;
     text-align: center;
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.18);
-    box-sizing: border-box;
 }
 
 .modal .btn-Fechar {
@@ -210,7 +298,6 @@ select {
     border-radius: 8px;
     font-size: 14px;
     font-weight: 600;
-    opacity: 1;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -233,114 +320,48 @@ select {
     background-color: #d4dfe6;
 }
 
+/* RESPONSIVIDADE - TABLETS */
 
-/*RESPONSIVIDADE*/
-
-@media (max-width: 800px) {
-
-    main {
-        grid-template-columns: 1fr;
-        gap: 40px;
-
-    }
-
-    .foto {
-        order: 1;
-    }
-
-    .formulario {
-        order: 2;
-        max-width: 500px;
-        margin: 0 auto;
-    }
-}
-
-/*MOBILE*/
-
-@media (max-width: 1100px) {
-    main {
-        padding: 30px;
-        grid-template-columns: minmax(250px, 1fr) minmax(280px, 360px);
-        gap: 30px;
-    }
-
-    .foto img {
-        width: min(400px, 90%);
-    }
-
-    .foto h1 {
-        font-size: 27px;
-    }
-
-    .formulario {
-        max-width: 360px;
-    }
-}
-
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     main {
         margin-left: 0;
-
         width: 100%;
-
-        grid-template-columns: 1fr;
-
-        gap: 50px;
-
-        padding: 30px;
+        padding: 25px;
     }
 
-
-    .foto {
-        order: 1;
+    .container-principal {
+        width: 100%;
+        max-width: 100%;
+        padding: 35px 5%;
     }
-
 
     .formulario {
-        order: 2;
-
-        width: 100%;
-        max-width: 600px;
-
-        margin: 0 auto;
+        max-width: 650px;
     }
-
-
-    .foto img {
-        width: min(400px, 70vw);
-    }
-
 }
 
-@media(max-width:600px) {
+/* RESPONSIVIDADE - CELULARES */
+
+@media (max-width: 600px) {
     main {
+        margin-left: 0;
         width: 100%;
+        padding: 15px;
+    }
 
+    .container-principal {
         padding: 25px 20px;
-
-        display: flex;
-
-        flex-direction: column;
-
-        gap: 40px;
+        gap: 25px;
     }
 
-    .foto {
-        width: 100%;
+    .icone-perfil {
+        width: 130px;
+        height: 130px;
     }
 
-
-    .foto img {
-        width: min(300px, 80vw);
+    .icone-perfil i {
+        font-size: 80px;
     }
-
-
-    .foto button {
-        width: 180px;
-
-        margin-top: 5px;
-    }
-
 
     .foto h1 {
         font-size: 25px;
@@ -348,40 +369,31 @@ select {
 
     .formulario {
         width: 100%;
-
-        max-width: none;
+        max-width: 100%;
     }
 
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
 
-    .formulario h2 {
+    .secao-formulario h2 {
         font-size: 21px;
-
-        margin-top: 20px;
     }
 
-
-    .formulario p {
+    .campo label {
         font-size: 14px;
     }
 
-
-    input,
-    select {
-        height: 34px;
-    }
-
-
     .confirmar {
         width: 100%;
-
-        height: 35px;
-
-        margin-top: 20px;
     }
 
-
-    .cancelamento-matricula {
-        height: 100px;
+    .formulario hr {
+        margin: 25px 0;
     }
 
+    .modal .modal-conteudo {
+        padding: 40px 20px 25px;
+    }
 }
